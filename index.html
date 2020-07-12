@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Герои</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+      <div class="logo"><a href="index.html" class="logo-link"><img src="./img/logo1.jpg" alt="Екатерина Новик"></a></div>
+      <h1 class="title">Выбери своего героя</h1>
+      <div class="social">
+        <a href="https://vk.com/frontend_katrina" class="social-link" target="_blank"><img src="./img/icon-vk.svg" alt="группа вк"></a>
+        <a href="https://github.com/KatrinaNov" class="social-link" target="_blank"><img src="./img/icon-github.svg" alt="github"></a>
+      </div>
+  </header>
+    <aside class="filter-block">
+      <form id='search-form'>
+        <input type="text" class="search filter-input" id="search-text" placeholder="Введите имя героя...">
+      </form>
+      <select name="movies" id="movies" class="movies filter-input">
+        <option value="">Выберите фильм</option>
+        <option value="Doctor Strange">Doctor Strange</option>
+        <option value="Avengers: Endgame">Avengers: Endgame</option>
+        <option value="Ant-Man and the Wasp">Ant-Man and the Wasp</option>
+      </select>
+      <fieldset>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </fieldset>
+      <fieldset>
+        <input type="radio" id="alive" name="status" value="alive">
+        <label for="male">Alive</label>
+        <input type="radio" id="deceased" name="status" value="deceased">
+        <label for="female">Deceased</label>
+      </fieldset>
+       
+    </aside>
+    <div class="output">
+      
+    </div>
+  
+  
+  <script src="script/script.js"></script>
+</body>
+</html>
