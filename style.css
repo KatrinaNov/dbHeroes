@@ -3,8 +3,18 @@
   margin: 0;
 }
 /* ebebeb  260259 F1B507*/
+@font-face {
+  font-family: 'IRONMAN';
+  src: 
+  url('../fonts/IRONMAN.woff') format('woff'),
+  url('../fonts/IRONMAN.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+  }
+
 body {
-  color: #260259;
+  font-family: sans-serif;
 }
 img {
   width: 100%;
@@ -17,26 +27,30 @@ a {
 .header {
   position: fixed;
   width: 100%;
-  background: #ebebeb;  
+  background: #000 url('../img/bg-header.jpg') no-repeat center/cover;  
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px;
   z-index: 5;
   border-bottom: 1px dotted #260259;
 }
 .logo-link {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+  font-size: 54px;
+  font-family: 'IRONMAN';
+  color: #fff;
 }
 .social-link {
   display: inline-block;
-  width: 30px;
+  width: 40px;
+  margin-right: 10px;
 }
 .title {
-  font-size: 28px;
+  font-size: 48px;
   text-transform: uppercase;
+  font-family: 'IRONMAN';
+  color: #fff;
+
 }
 /* фильтр */
 .filter-block {
@@ -55,6 +69,19 @@ a {
   border: none;
   margin-bottom: 15px;
 }
+fieldset {  
+  margin-bottom: 20px;
+}
+legend {
+  font-size: 16px;
+  color: #F1B507;
+  font-weight: 700;
+}
+.input-group {
+  margin: 10px 0;
+}
+
+
 
 /* карточки */
 .output {

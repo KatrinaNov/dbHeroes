@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="header">
-      <div class="logo"><a href="index.html" class="logo-link"><img src="./img/logo1.jpg" alt="Екатерина Новик"></a></div>
+      <div class="logo"><a href="index.html" class="logo-link">EN</a></div>
       <h1 class="title">Выбери своего героя</h1>
       <div class="social">
         <a href="https://vk.com/frontend_katrina" class="social-link" target="_blank"><img src="./img/icon-vk.svg" alt="группа вк"></a>
@@ -19,25 +19,42 @@
       <form id='search-form'>
         <input type="text" class="search filter-input" id="search-text" placeholder="Введите имя героя...">
       </form>
+      <form action="#" class="filter-form">
       <select name="movies" id="movies" class="movies filter-input">
-        <option value="">Выберите фильм</option>
-        <option value="Doctor Strange">Doctor Strange</option>
-        <option value="Avengers: Endgame">Avengers: Endgame</option>
-        <option value="Ant-Man and the Wasp">Ant-Man and the Wasp</option>
+        <option value="all">Все фильмы</option>        
       </select>
       <fieldset>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+        <legend>Укажите пол</legend>
+        <div class="input-group">
+          <input type="radio" id="allgender" name="gender" value="all" checked>
+          <label for="allgender">Не важно</label>
+        </div>        
+        <div class="input-group">
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Мужской</label>
+        </div>        
+        <div class="input-group">
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Женский</label>
+        </div>        
       </fieldset>
+
       <fieldset>
-        <input type="radio" id="alive" name="status" value="alive">
-        <label for="male">Alive</label>
-        <input type="radio" id="deceased" name="status" value="deceased">
-        <label for="female">Deceased</label>
+        <legend>Укажите статус героя</legend>
+        <div class="input-group">
+          <input type="radio" id="allstatus" name="status" value="all" checked>
+          <label for="allstatus">Не важно</label>
+        </div>       
+        <div class="input-group">
+          <input type="radio" id="alive" name="status" value="Alive">
+          <label for="male">Жив</label>
+        </div>        
+        <div class="input-group">
+          <input type="radio" id="deceased" name="status" value="Deceased">
+          <label for="female">Погиб</label>
+        </div>        
       </fieldset>
-       
+      </form>
     </aside>
     <div class="output">
       
