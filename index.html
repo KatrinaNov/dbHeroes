@@ -17,7 +17,9 @@
   </header>
     <aside class="filter-block">
       <form id='search-form'>
-        <input type="text" class="search filter-input" id="search-text" placeholder="Введите имя героя...">
+        <input type="text" class="search filter-input" id="search-text" placeholder="Введите имя героя..." autocomplete="off">
+        <ul class="dropdown-hero">       
+        </ul>
       </form>
       <form action="#" class="filter-form">
       <select name="movies" id="movies" class="movies filter-input">
@@ -47,11 +49,11 @@
         </div>       
         <div class="input-group">
           <input type="radio" id="alive" name="status" value="Alive">
-          <label for="male">Жив</label>
+          <label for="alive">Жив</label>
         </div>        
         <div class="input-group">
           <input type="radio" id="deceased" name="status" value="Deceased">
-          <label for="female">Погиб</label>
+          <label for="deceased">Погиб</label>
         </div>        
       </fieldset>
       </form>

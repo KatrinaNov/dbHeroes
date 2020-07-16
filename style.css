@@ -52,6 +52,23 @@ a {
   color: #fff;
 
 }
+/* форма поиска */
+#search-form {
+  position: relative;
+}
+.dropdown-hero {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  background: #fff;
+  top: 40px;  
+}
+.dropdown-hero__item{
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
 /* фильтр */
 .filter-block {
   background: #ebebeb;
