@@ -26,7 +26,7 @@ const render = data => {
       <div class="card">
         <div class="card-front">
           <img class="card-img" src='${poster}'>
-          <div class="card-name">${item.name}о</div>
+          <div class="card-name">${item.name}</div>
         </div>
         <div class="card-back">
           <div class="card-text">Имя: ${item.name}</div>
